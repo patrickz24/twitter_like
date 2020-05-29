@@ -47,7 +47,8 @@ input{
 #image{
     /* background-color: brown; */
     height: 35%;
-    width: 60%;
+    width: 40%;
+    margin: 0 auto;
 }
 
 #image img{

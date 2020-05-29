@@ -6,7 +6,8 @@ const db = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
     password : 'root',
-    database : 'twitter_db'
+    database : 'twitter_like',
+    port     : '8889'
   });
   
   db.connect((err) => {

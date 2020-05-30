@@ -12,13 +12,11 @@ class Utilisateur{
         this.password = props.password;
     }
 
-    
     create(){
-        const sql = `CREATE TABLE Utilisateur(id_utilisateur INT(11) NOT NULL AUTO_INCREMENT,PRIMARY KEY (id_utilisateur),nom VARCHAR(100),prenom VARCHAR(100),email VARCHAR(200),date_de_naissance DATE,sexe VARCHAR(100),ville VARCHAR(100),password VARCHAR (100));`
+        const sql = `INSERT INTO Utilisateur (nom, prenom, email, date_de_naissance, sexe, ville, password) VALUES ('${Utilisateur.nom}', '${Utilisateur.prenom}', '${Utilisateur.email}', '${Utilisateur.date_de_naissance}', '${Utilisateur.sexe}', ${Utilisateur.ville}, '${Utilisateur.password}' ) `;
         connexion.query(sql, function (err, result) {
             if (err) throw err;
-            console.log("1 record inserted");
-          });
-         
+            console.log("table inserted");
+          });         
     }
 }

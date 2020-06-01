@@ -1,5 +1,9 @@
+
+
+
 // Modules
 const express = require('express');
+const authController = require('../controllers/authController.js')
 
 // Middlewares
 const router = express.Router();
@@ -17,13 +21,15 @@ router.get('/login', function (req, res){
 
 router.get('/signin', function (req, res) {
     res.render('signin', {
-        style : '/css/composant/login.css'
+        style : '/css/composant/signin.css'
     })
 })
 
+router.post('/signin', authController.createUtilisateur)
+
 router.get('*', function (req, res) {
     res.status(404)
-    .send('Unknow Adress');
+    .send('Unknow Address');
 });
 
 // Export du fichier

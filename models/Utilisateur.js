@@ -1,5 +1,7 @@
 const connexion = require('../db.js')
 
+//  const connexion = require('../db.js')
+
 class Utilisateur{
     constructor(props){
 
@@ -12,11 +14,13 @@ class Utilisateur{
         this.password = props.password;
     }
 
-    create(){
-        const sql = `INSERT INTO Utilisateur (nom, prenom, email, date_de_naissance, sexe, ville, password) VALUES ('${Utilisateur.nom}', '${Utilisateur.prenom}', '${Utilisateur.email}', '${Utilisateur.date_de_naissance}', '${Utilisateur.sexe}', ${Utilisateur.ville}, '${Utilisateur.password}' ) `;
+    static create(props){
+        const sql = `INSERT INTO Utilisateurs (nom, prenom, email, date_de_naissance, sexe, ville, password) VALUES ('${props.nom}', '${props.prenom}', '${props.email}', '${props.date_de_naissance}', '${props.sexe}', '${props.ville}', '${props.password}' ) `;
         connexion.query(sql, function (err, result) {
             if (err) throw err;
-            console.log("table inserted");
-          });         
+            console.log("Success");
+        });         
     }
 }
+
+module.exports = Utilisateur

@@ -9,7 +9,7 @@ body {
 
 #form {
     /* background-color: blue; */
-    height: 90%;
+    height: 102%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -21,8 +21,9 @@ body {
 
 form{
     /* background-color: aquamarine; */
-    height:60%;
+    height:100%;
     width: 90%;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -52,6 +53,16 @@ input{
     height: 15rem;
 }
 
+select{
+    height: 3rem;
+    width: 20rem;
+    border-radius: 2em;
+    background-color: #08b4fc;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
 a{
     text-decoration: none;
     color: #08b4fc;
@@ -61,6 +72,15 @@ a{
     color: #08b4fc;
 }
 
+#city, #email, #password{
+    margin-top: .6em;
+}
+
 .btn-submit{
     cursor: pointer;
+    margin-top: .6em;
+}
+
+#sexe{
+    height: 1em;
 }

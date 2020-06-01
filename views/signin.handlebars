@@ -1,1 +1,37 @@
-<h1>page ok</h1>
+
+<div id="form">
+  <div id="image">
+    <img src="img/twitter_login_sidebar_illustration.png" alt="image twitter">
+  </div>
+  <form action="/signin" method="post" class="formulaire-inscription">
+    <div class="form-nom">
+      <input type="text" placeholder= "Enter your name" name="nom" id="nom" required> 
+    </div>
+    <div class="form-prenom">
+      <input type="text" placeholder= "Enter your first-name" name="prenom" id="first-name" required> 
+    </div>
+     <div class="form-email">
+      <input type="email" placeholder= "Enter your email" name="email" id="email" required>
+    </div>
+    <div class="form-date de naissance">
+      <input type="date" placeholder= "Enter your birthdate" name="date-de-naissance" id="birthdate" required> 
+    </div>
+    <div class="form-sexe"></div>
+      <div>
+        <input type="radio" id="sexe" name="sexe" value="male">
+        <label for="sexe">Male</label>
+      </div>
+      <div>
+        <input type="radio" id="sexe" name="sexe" value="female">
+        <label for="sexe">female</label>
+      </div>
+    <div class="form-ville">
+      <input type="text" placeholder= "Enter your city" name="ville" id="city" required> 
+    <div class="form-password">
+      <input type="password" placeholder="type your password" name="password" id="password" required>
+    </div>
+    <div class="form-submit">
+      <input type="submit" value="Signin" class="btn-submit">
+    </div>
+  </form>
+</div>

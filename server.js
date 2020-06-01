@@ -12,6 +12,11 @@ const server = express();
 //fichier statique
 server.use(express.static('assets'));
 
+//config body-parser
+server.use(express.urlencoded({
+    extended: false
+}));
+
 //router
 server.use(router);
 

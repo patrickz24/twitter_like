@@ -4,7 +4,7 @@ const exphbs  = require('express-handlebars');
 const bodyParser = require('body-parser');
 
 // Les routes
-const router = require("./routes");
+const router = require("./routes/authRoutes");
 
 // Instanciation serveur Express
 const server = express();
@@ -13,12 +13,13 @@ const server = express();
 server.use(express.static('assets'));
 
 //config body-parser
-server.use(express.urlencoded({
-    extended: false
-}));
+server.use(bodyParser.json())
+server.use(bodyParser.text())
+server.use(bodyParser.urlencoded({extended: false}));
 
 //router
 server.use(router);
+
 
 // Moteur de templates 
 server.engine('handlebars', exphbs());

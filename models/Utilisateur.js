@@ -1,6 +1,5 @@
 const connexion = require('../db.js')
 
-//  const connexion = require('../db.js')
 
 class Utilisateur{
     constructor(props){

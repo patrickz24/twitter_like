@@ -1,0 +1,59 @@
+  {{#if user}}
+  <div class="card ">
+    <img src=" ./img/tweeter.png" alt="">
+    <div class="card-body">
+         <h5 class="card-title text-center">Vous êtes toujours connecté</h5>
+    </div>
+  </div>
+    <div class="nav-item form-signin">
+        <hr class="my-4">
+        <h5 class="card-title text-center">Pour retourner cliquez ici</h5>
+        <a class="btn btn-lg btn-primary primary btn-block text-uppercase" href="/profile">Accueil</a>
+    </div>
+     <hr class="my-4">
+      <div class="nav-item form-signin">
+        <h5 class="card-title text-center">Pour se déconnecter cliquez ici</h5>
+        <a class="btn-danger btn btn-lg btn-primary primary btn-block text-uppercase" href="/logout" >Se déconnecter</a>
+      </div>
+ {{else}}
+ <div class="card ">
+    <img src=" ./img/tweeter.png" alt="">
+    <div class="card-body">
+        <h5 class="card-title text-center">Voir ce qui se passe actuellement dans le monde</h5>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+          <div class="card-body">
+            <h5 class="card-title text-center">Se connecter</h5>
+            <form class="form-signin" action="/connexion" method="POST">
+              <div class="form-label-group">
+                <input type="text" name="email" id="inputEmail" class="form-control" placeholder="Email" required>
+                <label for="inputEmail">Email d'utilisateur</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <label for="inputPassword">Mot de passe</label>
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Se souvenir du mot de passe</label>
+              </div>
+              <button class="btn btn-lg btn-primary primary btn-block text-uppercase" type="submit">Se connecter</button>
+             
+            </form>
+            <hr class="my-4">
+            <a href="https://twitter.com/fr/tos"> Conditions</a>
+            <a href="https://twitter.com/fr/privacy"> Politique de confidentialité</a>
+            <a href="https://help.twitter.com/fr/rules-and-policies/twitter-cookies"> Cookies</a>
+            <a href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html"> Informations sur les publicités</a>
+            <a href="https://business.twitter.com/"> Plus</a>
+            <br>
+            <a>© 2020 Twitter, Inc.</a>
+             <hr class="my-4">
+          </div>
+        </div>
+  </div>
+   {{/if}}

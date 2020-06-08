@@ -1,0 +1,40 @@
+
+        {{#each pipi}}
+      
+            <div class="card ">
+                <div class="card-body">
+                    <a href="/profile">
+                        <h3 class="card-title text-uppercase">
+                            {{hashtag}}
+                           
+                        </h3>
+                    </a>
+                    <h5> {{id_utilisateur}}</h5>
+                    <p class="m-2">{{text}}</p>
+                     <div class="form-group">
+                        <button class=" btn btn-danger" type="submit">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <p class="text-muted">
+                        {{timeago temps}}
+                    </p>
+                    <p class="text-muted">{{temps}}</p>
+                    <a class="bt btn btn-secondary" href="/tweets/delete/{{id}}">
+                        Supprimer
+                    </a>
+                    <a class="btn btn-secondary" href="/tweets/edit/{{id}}">
+                        Editer
+                    </a>
+                </div>
+         
+        </div>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>Il n'y a pas encore de Tweet enregistré.</p>
+                <a href="/tweets/add">Pour créer un Tweet cliquez ici</a> <i class="smile far fa-smile-wink"></i>
+            </div>
+        </div>
+        {{/each}}
+  

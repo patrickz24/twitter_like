@@ -1,0 +1,44 @@
+npm init --yes // pour installer package.json)
+npm i // pour installer tous le modules suivants
+
+express // framework nodejs le plus populaire pour la création d'applications backend
+express-handlebars // est l'intégration du moteur de modèle de guidon dans express
+body-parser // 
+cookies-parser//
+moment// convertir les dates au format 
+morgan // permet de créer des messages sur ce que les applications client demandent au serveur (requêtes HTTP)
+express-session // gérer les sessions de notre application sera nécessaire pour authentifier un utilisateur
+mysql // est un module npm pour se connecter à la base de données
+express-mysql-session // ce module stocke les sessions dans la base de données, au lieu du serveur.
+passport // est un module pour authentifier et gérer le processus de connexion d'un utilisateur
+passport-local // est un plugin de passeport pour authentifier les utilisateurs avec notre propre base de données
+bcryptjs // ce module que nous utiliserons pour crypter les mots de passe des utilisateurs avant de les enregistrer dans la base de données
+timeago.js // convertir les dates au format 2 minutes avant
+connect-flash // sert à afficher les messages d'erreur et de réussite lorsqu'une opération est effectuée
+express-validator // est un module pour valider les données que l'utilisateur nous envoie depuis l'application cliente7
+
+
+npm init --yes //para instalar package.json)
+npm i // para instalar todos los siguentes modulos
+
+express  // framework mas popular de nodejs para la crecion de aplicaciones backend
+express-handlebars // es la integracion del motor de plantillas handlebars en express
+body-parser // 
+cookies-parser 
+moment // para mostrar tipo de fecha como timeago 
+morgan   // permite crear mensajes de que es lo que las aplicaciones clientes estan pidiendo al servidor (peticiones HTTP)
+express-session // administra la sessiones de nuestra app sera necesario para auntentivar a un usuario
+mysql // es un modulo de npm para conectarnos a la base de datos
+express-mysql-session //este modulo almacena las sessiones en la base de datos, en lugar del servidor.
+passport  // es un modulo para autenticar y manejar el proceso de login de un usuario
+passport-local  // es un complemento de passort para autenticar a los usuarios con nuestra propia base de datos 
+bcryptjs   // este modulo lo usaremos para cifrar las contrasenas de los usuarios antes de guardarlos en la base de datos
+timeago.js   //convierte los timestamps o fechas en un formato de 2 minutos antes
+connect-flash   //sirve para mostrar mensajes de error y exito cuando se realiza una operacion
+express-validator    // es un modulo para validar los datos que el ususario nos envia desde la aplicacion cliente
+
+
+clases a utilizar
+div class"col-md-4"> ingresa las imagenes en columnas de cuatro
+    class"w-100 h-100 img-thumbnai" //vuelve una imagen 
+</div>

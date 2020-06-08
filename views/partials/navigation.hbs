@@ -1,0 +1,34 @@
+<nav class="nav-link navbar navbar-expand-lg ">
+  <div class="container">
+      <div>
+        <i class="tweet fab fa-twitter fa-fw"></i>
+      </div>
+      <div class="nav-item">
+         <a href="/" class="button btn menu btn-primary" type="submit"><h5>Découverte</h5> </a>
+      </div>
+       <div class="nav-item">
+         <a href="/profile" class="button-a btn menu btn-primary" type="submit"><h5>Accueil</h5> </a>
+      </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        {{#if user}}
+        <li class="nav-item">
+          <a href="/logout" class="btn-danger button btn menu btn-primary"><h5>Se déconnecter</h5></a>
+        </li>
+       
+        {{else}}
+        <li class="nav-item form-signin">
+          <a class="bton-p  btn btn-lg btn-primary primary" href="/connexion">Se connecter</a>
+        </li>
+        <li class="nav-item form-signin">
+          <a class="bton-s btn btn-lg btn-primary secundary" href="/inscription">S'incrire</a>
+        </li> 
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

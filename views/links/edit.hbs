@@ -1,0 +1,28 @@
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-body">
+            <blockquote>
+              <form action="/tweets/edit/{{tweet.id}}" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="hashtag" class="form-control" placeholder="hashtags" value="{{tweet.hashtag}}" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="url" class="form-control" placeholder="@" value="{{tweet.url}}">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="text" rows="2" class="form-control" placeholder="Tweet">{{tweet.text}}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success btn-block">
+                            Sauvegarder
+                        </button>
+                    </div>
+                </form>
+            </blockquote>
+        </div>
+    </div>
+</div>
+
+
+
+   

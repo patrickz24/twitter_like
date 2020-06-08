@@ -1,0 +1,41 @@
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <i class="tweet fab fa-twitter fa-fw"></i>
+            <h5 class="card-title text-center">S'inscrire à Twitter</h5>
+             <form class="form-signin" action="/inscription" method="POST">
+                <div class="form-group">
+                    <input type="text" name="nom" class="form-control" placeholder="Nom" autofocus>
+                </div>
+                    <div class="form-group">
+                    <input type="text" name="prenom" class="form-control" placeholder="Prenom" >
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Email" >
+                </div>
+                <div class="form-group">
+                    <input type="date" name="date_de_naissance" class="form-control" placeholder="Date Naissance">Date Naissance
+                </div>
+                <div class="form-group">
+                    <input type="text" name="sexe" class="form-control" placeholder="Sexe" >
+                </div>
+                <div class="form-group">
+                    <input type="text" name="ville" class="form-control" placeholder="Ville" >
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" class="form-control" placeholder="Mot de passe" >
+                </div>
+                <button class="btn btn-lg btn-primary primary btn-block text-uppercase" type="submit">S'inscrire</button>
+                
+                <a href="/connexion" class="btn btn-lg btn-primary secundary btn-block text-uppercase" type="submit">Se connecter</a>
+            </form>
+            <a>© 2020 Twitter, Inc.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  

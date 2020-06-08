@@ -1,0 +1,27 @@
+<div class="main">
+    <div class="section-1">
+            <form class="form-signin">
+                <a href="/profile" class="button btn menu btn-primary" type="submit"><h5>Accueil</h5> </a>
+                <br>
+                <a href="/tweet" class="button btn menu btn-primary" type="submit"><h5>Tweets</h5> </a>
+                <br>
+                <a href="/tweets/editer/{{user.id}}" class="button btn menu btn-primary" type="submit"><h5>Compte utilisateur</h5> </a>
+                <br>
+                <a href="/profil_utilisateur" class="button btn menu btn-primary" type="submit"><h5>Profil utilisateur</h5></a>
+            </form>
+            <br>
+            <form class="form-signin">
+                <a href="/tweets/add" class=" button-2 button btn menu btn-primary" type="submit"><h5>Tweet</h5></a>
+            </form>
+            <div>
+                <img class="photo" src="./img/photo3.jpg" alt="">
+                <h4>{{user.nom}} {{user.prenom}}</h4>
+                <h4>{{user.email}}</h4>
+                <a href="/logout" class="btn-danger button-2 button btn menu btn-primary">
+                    Se déconnecter
+                </a>
+            </div>        
+    </div>
+
+
+

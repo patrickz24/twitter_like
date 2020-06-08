@@ -1,0 +1,38 @@
+{{#each tweets}}
+    <div >
+        <div class="card text-left">
+            <a class="secundary btn-block"</a>{{id_utilisateur}} Prenom 
+            <div class="card-body">
+                <a href="/profil_utilisateur">
+                    <h3 class="card-title text-uppercase">
+                        {{hashtag}}
+                    </h3>
+                </a>
+                <p class="m-2">{{text}}</p>       
+                <p class="text-muted"><i class="far fa-clock"></i> {{timeago temps}}</p>             
+            </div>
+            <div class="card">
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                    <button class="btn btn-success" id="btn-like" data-id="{{id}}">
+                        <i class="far fa-thumbs-up"></i> 
+                    </button>
+                    <p>
+                        <span class="likes-count">{{likes}} <i class="far fa-heart"></i></span>
+                        
+                    </p>
+                    <p>
+                        <span class="likes-count "><i class="far fa-eye"></i> {{views}}</span>   
+                    </p>    
+                </div>  
+            </div>                                    
+        </div>
+    </div>
+    {{else}}
+    <div class="col-md-4 mx-auto">
+        <div class="card card-body text-center">
+            <p>Aucun Tweet enregisté par tes amis.</p>
+            <i class="smile fas fa-poo"></i>
+        </div>
+    </div>
+    {{/each}}
+</div>

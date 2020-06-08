@@ -1,0 +1,38 @@
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <i class="tweet fab fa-twitter fa-fw"></i>
+            <h5 class="card-title text-center">Se connecter à Twitter</h5>
+            <form class="form-signin" action="/connexion" method="POST">
+              <div class="form-label-group">
+                <input type="text" name="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+                <label for="inputEmail">Email d'utilisateur</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <label for="inputPassword">Mot de passe</label>
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Se souvenir du mot de passe</label>
+              </div>
+              <button class="btn btn-lg btn-primary primary btn-block text-uppercase" type="submit">Se connecter</button>
+              <hr class="my-4">
+              <a href="/inscription" class="btn btn-lg btn-primary secundary btn-block text-uppercase" type="submit">S'inscrire</a>
+             </form>
+            <a href="https://twitter.com/fr/tos"> Conditions</a>
+            <a href="https://twitter.com/fr/privacy"> Politique de confidentialité</a>
+            <a href="https://help.twitter.com/fr/rules-and-policies/twitter-cookies"> Cookies</a>
+            <a href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html"> Informations sur les publicités</a>
+            <a href="https://business.twitter.com/"> Plus</a>
+            <br>
+            <a>© 2020 Twitter, Inc.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

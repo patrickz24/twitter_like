@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+         <div class="card-body">
+           
+            <h5 class="card-title text-center">Compte {{user.prenom}} {{user.nom}}</h5>
+            <form class="form-signin" action="/tweets/editer/{{utilisateur.id}}" method="POST">
+              <div class="form-label-group">
+                <input type="text" name="nom" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <label for="inputEmail">{{utilisateur.nom}}</label>
+              </div>
+               <div class="form-label-group">
+                <input type="text" name="prenom" id="inputEmail" class="form-control" placeholder="Email address" required>
+                <label for="inputEmail">{{utilisateur.prenom}}</label>
+              </div>
+           
+              <div class="form-label-group">
+                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                <label for="inputEmail">{{utilisateur.email}}</label>
+              </div>
+              <div class="form-label-group">
+                <input type="date" name="date_de_naissance" id="inputEmail" class="form-control" placeholder="Email address" required>
+                <label for="inputEmail">{{utilisateur.date_de_naissance}}</label>
+              </div>
+              <div class="form-label-group">
+                <input type="text" name="sexe" id="inputEmail" class="form-control" placeholder="Email address" required>
+                <label for="inputEmail">{{utilisateur.sexe}}</label>
+              </div>
+               <div class="form-label-group">
+                <input type="text" name="ville" id="inputEmail" class="form-control" placeholder="Email address" required>
+                <label for="inputEmail">{{utilisateur.ville}}</label>
+              </div>
+              <div class="form-label-group">
+                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <label for="inputPassword">************</label>
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+              </div>
+              <button class="btc btn btn-lg btn-primary primary text-uppercase" type="submit">Editer</button>
+           </form>
+        
+            <a>© 2020 Twitter, Inc.</a>
+        </div>
+</div>
